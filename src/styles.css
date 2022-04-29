@@ -1,0 +1,59 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  background: #94a6df;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.insta {
+  width: 150px;
+  height: 150px;
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  border-radius: 35px;
+  display: grid;
+  place-items: center;
+}
+.innerbox {
+  width: 120px;
+  height: 120px;
+  border-radius: 35px;
+  border: 12px solid white;
+  /* left: 10px;
+  bottom: 10px; */
+  position: relative;
+}
+.innerbox:before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 10px solid #fff;
+  top: 25%;
+  left: 23%;
+}
+.innerbox:after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  top: 10%;
+  right: 12%;
+}
